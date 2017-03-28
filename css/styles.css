@@ -2,21 +2,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 button {
   background-color: #3399ff;
   font-size: 72px;
-}
-
-@keyframes button-animation {
-  0%   {background-color:#3399ff;}
-  100% {background-color: #ccccff; transform: scale(1.1, 1.1);}
+  transition: all .3s linear;
+  border-radius: 25px;
+  padding: 20px;
+  border: none;
+  background: #3399ff;
 }
 
 button:hover {
-  animation-name: button-animation;
-  animation-duration: 0.3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  background-color: #ccccff;
+  transform: scale(1.1, 1.1);
 }
