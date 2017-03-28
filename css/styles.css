@@ -6,24 +6,42 @@
 }
 
 button {
-  font-size: 72px;
+  font-size: 48px;
   transition: .1s linear;
-  border-radius: 25px;
-  padding: 20px;
+  border-radius: 12.5px;
+  padding: 10px;
   border: none;
   background: #3399ff;
   box-shadow: 5px 5px 2px #888888;
-}
-
-button:hover {
-  background: #ccccff;
-  transform: scale(1.1, 1.1);
+  height: 400px;
+  width: 400px;
 }
 
 button:active {
-  background: #AAAAC0;
+  background: #AAAAC0 !important;
   box-shadow: 2px 2px 1px #888888;
-  top:5px;
-  left:5px;
-  transform: scale(1.05, 1.05);
+  top:2.5px;
+  left:2.5px;
+  transform: scale(0.95, 0.95);
+}
+
+@media screen and (min-width: 570px) {
+    button {
+      font-size: 72px;
+      border-radius: 25px;
+      padding: 20px;
+      height: initial;
+      width: initial;
+    }
+
+    button:hover {
+      background: #ccccff;
+      transform: scale(1.1, 1.1);
+    }
+
+    button:active {
+      transform: scale(1.05, 1.05);
+      top:5px;
+      left:5px;
+    }
 }
